@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Nitin Panwar
+% Website: 
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://nitin.me/}{\Large Nitin Panwar}} & Email : \href{mailto:nitinpanwar0802@gmail.com}{nitinpanwar0802@gmail.com}\\
+  {Software Engineer} & Mobile : +91 9634960209 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Bitcs}{Noida, India}
+      {Software Engineer}{Feb 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Raven System}
+          {Built out the raven system for internal tool, to submit issue, assign them, track them and add issue incidents for Ops Team workflow.}
+        \resumeItem{Error Handling Framework}
+          {Implemented an Error handling framework for different services we had to easily handle and show those errors on frontend.}
+        \resumeItem{Improved Test Coverage}
+          {Implemented Testing on both frontend and backend and improved test coverage by \textbf{+75\%} for the project.}
+        \resumeItem{Tools Used}
+          {React, NodeJs, GeaphQL, Sequelize, Postgres SQL, Docker, kubernetes and GCloud}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sapio Analytics}{Mumbai, India}
+      {Frontend Developer Intern - Awarded as Inter of the Month}{Aug 2021 - Nov 2021}
+      \resumeItemListStart
+        \resumeItem{Dashboard}
+          {Built frontend Dashboard to show analytics and providing statics to users using various graphs libraries, collaborated with Backend and database team.}
+        \resumeItem{Map}
+          {Implememted Map on frontend for users to navigate through different state of india to see analytics and stats for that particular state. (MapBox)}
+        \resumeItem{Tools Used}
+          {React, MaterialUI, Mapbox, D3, Redux, plotly.js and google charts}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Meerut Institute of Engineering and Technology}{UP, India}
+      {Bachelors in Computer Science;  SGPA: 7.00}{Aug. 2019 -- Dec. 2023}
+    \resumeSubheading
+      {Army Public School}{Meerut, India}
+      {Percentage:  74\%}{July. 2019}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Netflix Clone}
+      {Watch Trailer, ratings of latest movies and add your favorite movies and TV series to your list. Created using React, Firebase, IMDB Database}
+    \resumeSubItem{Hotseat API}
+      {Rest API of a barber shop application - Built with Express, TypeORM and Postgres.}
+    \resumeSubItem{Express Gateway}
+      {Open source NodeJS framework to easily manage your Express JS routes and add subrouters.}
+    \resumeSubItem{Food Ordering App}
+      {Created Online Food Ordering Anroid and ios app using React Native, React navigation and Firebase.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Javascript, Typescript, Go, Python, SQL, GraphQL}
+    }
+    \item{
+     \textbf{Technologies}{: React, Google Cloud, Docker, Kubernetes and Git}
+    }
+
+ \resumeSubHeadingListEnd
+ 
+%  ------------------ Courses ---------------
+\section{Courses}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Docker Mastery: with Kubernetes +Swarm from a Docker Captain
+}{20 hrs}
+      {Udemy}{Jan - March 2022}
+    \resumeSubheading
+      {SQL and PostgreSQL: The Complete Developer's Guide
+}{22 hrs}
+      {Udemy}{Sept - Nov 2021}
+    \resumeSubheading
+      {Microservices with NodeJS and React}{54 hrs}
+      {Udemy}{Jan - June 2021}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
